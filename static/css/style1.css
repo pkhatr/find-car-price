@@ -1,0 +1,182 @@
+
+body {
+    color: black;
+    background-color: rgb(240, 233, 233);
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+    background-color: rgb(52, 79, 153);
+}
+  
+li {
+    float: left;
+}
+  
+.nav-link {
+    display: inline-block;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.g-search{
+
+    float: right;
+}
+
+.search-text {
+    font-size: medium;
+}
+
+.btn-success {
+    border-radius: 0.5em;
+    font-size: medium;
+} 
+
+/* Change the link color to #111 (black) on hover */
+nav a:hover {
+background-color: rgb(189, 202, 111);
+}
+
+.btn-success:hover {
+    background-color: rgb(189, 202, 111);
+    cursor: pointer;
+}
+
+h1 {
+    color: rgb(52, 79, 153);
+    text-align: center;
+    font-size: 4em;
+    font-weight: bolder;
+    margin: 0em;
+    padding: 0.4em;
+}
+
+h2 {
+    color: rgb(50, 52, 58);
+    font-size: 2.2em;
+}
+
+/* .carinfo {
+    text-align: left;
+} */
+
+.leftpane {
+    width: 30%; 
+    float: left;
+}
+
+.middlepane {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.rightpane {
+    width: 25%; 
+    float: right;
+}
+
+.infolbl {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.infolbl2 {
+    text-align: center;
+}
+
+.logos{
+    padding-left: 2.5em;
+    padding-top: 1.2em;
+    max-width: 70%;
+    height: auto;
+}
+
+.middle-border {
+    border-style: outset;
+    border-color: #4e2e7938; 
+    border-width: 0.5em;
+}
+
+.animate {
+    background-color: rgba(21, 224, 55, 0.329);
+    color: black;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    font-style: italic;
+    position: relative;
+    animation-name: firstanim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes firstanim {
+    from {top: 1em;} 
+    to {top: 10em;}
+}
+
+.car-table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(110, 226, 178);
+}
+
+.car-sites {
+    height: 12em;
+}
+
+.animate2 {
+    display: inline-flex;
+    background-color: rgba(21, 224, 55, 0.329);
+    color: black;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    font-style: italic;
+    position: relative;
+    animation-name: secondanim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;      
+}
+
+@keyframes secondanim {
+    from {left: 5em;} 
+    to {left: 35em;}
+}
+
+.invis {
+    visibility: hidden;
+    background-color: red;
+    color: white;
+    font-size: 0.5em;
+}
+
+.disable:hover .invis{
+    visibility: visible;
+}
+
+.about-container {
+    display: flex;
+    height: 35em;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-message {
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: rgb(5, 54, 31);
+}

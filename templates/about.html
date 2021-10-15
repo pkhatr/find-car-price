@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <div>
+        <nav class="nav">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('pop_cars') }}">Popular Cars</a>
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+            <a class="nav-link disable" href="#"  disabled tabindex="-1">Disabled <span class=invis>This section is disabled</span></a>
+            <form class="nav-link g-search" method="GET" action="https://www.google.com/search" target="_blank">
+                <input class="search-text" type="search" name="q" placeholder="Search">
+                <button class="btn-success" type="submit">Google Search</button>
+            </form>
+        </nav>
+    </div>
+    <div class=about-container>
+        <p class="about-message">This web application is only created for personal learning and training purpose.</p>
+    </div>
+</body>
+</html>

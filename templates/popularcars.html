@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car - Popular</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <div>
+        <nav class="nav">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('pop_cars') }}">Popular Cars</a>
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+            <a class="nav-link disable" href="#"  disabled tabindex="-1">Disabled <span class=invis>This section is disabled</span></a>
+            <form class="nav-link g-search" method="GET" action="https://www.google.com/search" target="_blank">
+                <input class="search-text" type="search" name="q" placeholder="Search">
+                <button class="btn-success" type="submit">Google Search</button>
+            </form>
+        </nav>
+    </div>
+    <div>
+        <h1>Popular Cars</h1>
+        <h3>Best Cars (Top 3) as ranked by Edmund.com experts.</h3>
+        <a href="https://www.edmunds.com/car-reviews">https://www.edmunds.com/car-reviews/</a>
+
+        <table class=car-table>
+            <tr>
+                <th>Ranking</th>
+                <th>Midsize SUVs</th>
+                <th>Large Sedans</th>
+                <th>Large Trucks</th>
+                <th>Electric vehicles</th>
+                <th>Hybrid Vehicles</th>
+                <th>Luxury Sport Coupe</th>
+                <th>Small Hatchback</th>
+                <th>Minivans</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kia Telluride</td>
+                <td>Toyota Avalon</td>
+                <td>Ford F-150</td>
+                <td>Tesla Model 3</td>
+                <td>Chrysler Pacifica</td>
+                <td>Chevrolet Corvette</td>
+                <td>Hyundai Veloster</td>
+                <td>Chrysler Pacifica</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hyundai Palisade</td>
+                <td>Volkswagen Arteon</td>
+                <td>Ram 1500</td>
+                <td>Kia Niro EV</td>
+                <td>Toyota RAV4 Prime</td>
+                <td>Porsche 911</td>
+                <td>Honda Civic</td>
+                <td>Honda Odysssey</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Honda Pilot</td>
+                <td>Chrysler 300</td>
+                <td>GMC Sierra 1500</td>
+                <td>Volkswagen ID.4</td>
+                <td>Jeep Wrangler</td>
+                <td>Porsche 718 Cayman</td>
+                <td>MINI Clubman</td>
+                <td>Toyota Sienna</td>
+            </tr>
+          </table>
+    </div>
+
+    <div class=car-sites>
+        <H3>Some Popular Websites for Cars</H3>
+        <a href="https://www.kbb.com/">KBB</a><br>
+        <a href="https://www.edmunds.com/">Edmunds</a><br>
+        <a href="https://www.cargurus.com/">Car Gurus</a><br>
+        <a href="https://www.autotrader.com/">Auto Trader</a><br>
+        <a href="https://www.carmax.com/">Carmax</a><br>
+    </div>
+
+    <div>
+        <p class="animate2"><span style="font-weight: bold;">Disclaimer:</span> This web application is only created for personal learning and training purpose. </p>
+    </div>
+</body>
+</html>
