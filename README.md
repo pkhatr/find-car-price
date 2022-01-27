@@ -12,6 +12,5 @@ Final model was created using Random Forest Regression technique.
 Web application was created using Flask. 
 
 Two images used in the web application were downloaded from
-https://www.seekpng.com/ipng/u2q8r5w7q8a9t4y3_image-106338-car-logos-1-car-logos-in/
-https://www.seekpng.com/ipng/u2q8q8a9t4o0q8u2_price-tag-price-tag-icon-png/
+seekpng
 
